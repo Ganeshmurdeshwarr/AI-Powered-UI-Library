@@ -6,6 +6,7 @@ import { setAllUsers, setUserData, setAllComponents } from "./redux/userSlice";
 import Home from "./pages/Home";
 import Generate from "./pages/Generate";
 import AdminDashboard from "./pages/AdminDashboard";
+import ComponentsPage from "./pages/ComponentPage";
 
 export const serverUrl = "http://localhost:8000";
 
@@ -73,6 +74,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/generate" element={<Generate />} />
+        <Route path="/component" element={<ComponentsPage />} />
       </Routes>
     </>
   );

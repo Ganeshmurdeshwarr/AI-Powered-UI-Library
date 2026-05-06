@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { useSelector } from 'react-redux';
 import { HiSparkles } from 'react-icons/hi';
 import { TbComponents } from 'react-icons/tb';
+import { useNavigate } from 'react-router-dom';
 
 
 const steps =[
@@ -15,6 +16,8 @@ const steps =[
 
 const Steps = ({setShowAuth}) => {
   const { userData } = useSelector((state) => state.user);
+    const navigate = useNavigate();
+
 
   return (
     <>
@@ -97,11 +100,12 @@ const Steps = ({setShowAuth}) => {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-3">
                   <motion.button
+                    onClick={() => navigate("/generate")}
                     whileHover={{ y: -2, scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className="flex items-center justify-center gap-2 bg-[#3be8ff] text-[#030b0d] px-7 py-3.5 rounded-xl font-semibold text-sm cursor-pointer border-none shadow-[0_0_30px_rgba(59,232,255,0.3)] hover:shadow-[0_0_40px_rgba(59,232,255,0,0.45)] transition-shadow "
                   >
-                    <HiSparkles size={15} /> Generate AL Component
+                    <HiSparkles size={15} /> Generate AI Component
                   </motion.button>
                   <motion.button
                     whileHover={{ y: -2 }}

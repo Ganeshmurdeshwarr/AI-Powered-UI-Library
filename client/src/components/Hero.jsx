@@ -109,7 +109,7 @@ const Hero = ({ setShowAuth }) => {
           whileTap={{ scale: 0.97 }}
           className="flex items-center justify-center gap-2 font-semibold text-sm px-6 sm:px-7 py-3.5 border-white/15 border hover:border-white/25 rounded-xl  text-white/70 cursor-pointer hover:text-white transition-all w-full sm:w-auto bg-transparent "
         >
-          <HiSparkles size={15} /> Generate AL Components
+          <HiSparkles size={15} /> Generate AI Components
         </motion.button>
       </motion.div>
 

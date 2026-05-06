@@ -83,7 +83,9 @@ function Home() {
             exit={{ opacity: 0, y: -10 }}
             className="md:hidden sticky top-[65px] z-30 bg-[#030b0d]/95 backdrop:-blur-md border-b border-white/5 px-4 py-4 flex flex-col gap-3"
           >
-            <button className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full">
+            <button
+            onClick={()=>navigate("/component")}
+            className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full">
               Components
             </button>
 

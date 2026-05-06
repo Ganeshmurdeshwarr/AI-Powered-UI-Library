@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { AnimatePresence, motion } from "motion/react";
 import { TbComponents, TbLogout, TbMenu2, TbX } from 'react-icons/tb';
 import { HiSparkles } from 'react-icons/hi';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = ({
@@ -15,7 +16,9 @@ const Navbar = ({
   profileOpen,
   handleLogout,
 }) => {
+
   const { userData } = useSelector((state) => state.user);
+  const navigate = useNavigate()
 
   return (
     <nav className="sticky top-0 z-40 flex items-center justify-between px-4 sm:px-8 lg:px10 py-4 border border-white/[0.05] bg-[#030b0d]/85 backdrop-blur-md">
@@ -32,7 +35,10 @@ const Navbar = ({
       </div>
 
       <div className="hidden md:flex items-center gap-6 lg:gap-8 text-sm text-white/50">
-        <button className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full ">
+        <button
+          onClick={() =>navigate("/component")}
+          className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full "
+        >
           Components
         </button>
 
