@@ -421,7 +421,7 @@ function AddComponentForm({ onSaved }) {
 
 // ── MAIN COMPONENT ───────────────────────────────────────────────────────────
 export default function AdminDashboard() {
-  const { userData, allUsers, allcomponents } = useSelector((s) => s.user);
+  const { userData, allUsers, allComponents } = useSelector((s) => s.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -461,7 +461,7 @@ export default function AdminDashboard() {
   }, [sidebarOpen]);
 
   const publicComponents =
-    allcomponents?.filter((c) => c.visibility === "public") || [];
+    allComponents?.filter((c) => c.visibility === "public") || [];
 
   const filteredPublicComponents = componentSearch.trim()
     ? publicComponents.filter(
