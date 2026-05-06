@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Auth from "../components/Auth";
 import Feature from "../components/Features";
 import { AnimatePresence, motion } from "motion/react";
@@ -14,16 +14,24 @@ import { setUserData } from "../redux/userSlice";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
+
+
 function Home() {
   const [showAuth, setShowAuth] = useState(false);
   const { userData } = useSelector((state) => state.user);
   const [menuOpen, setMenuOpen] = useState(false);
-    const [profileOpen, setProfileOpen] = useState(false);
-    const dispatch = useDispatch()
-    const navigate = useNavigate()
+  const [profileOpen, setProfileOpen] = useState(false);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
+  // ── Admin redirect ──
+  useEffect(() => {
+    if (userData?.role === "admin") {
+      navigate("/admin");
+    }
+  }, [userData]);
 
-   const getName = (name) => {
+  const getName = (name) => {
     if (!name) return "U";
 
     return name
@@ -35,19 +43,18 @@ function Home() {
       .slice(0, 2);
   };
 
-   const handleLogout = async () => {
-      try {
-        await axios.get(serverUrl + "/api/auth/logout", {
-          withCredentials: true,
-        });
-        dispatch(setUserData(null));
-        navigate("/");
-      } catch (error) {
-        console.log(error);
-      }
-      setProfileOpen(false);
-    };
-  
+  const handleLogout = async () => {
+    try {
+      await axios.get(serverUrl + "/api/auth/logout", {
+        withCredentials: true,
+      });
+      dispatch(setUserData(null));
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+    setProfileOpen(false);
+  };
 
   return (
     <div

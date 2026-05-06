@@ -154,3 +154,17 @@ return res.status(200).json({message:"Component published successfully"})
   return res.status(500).json({message:"Component published failed"})
 }
 }
+
+
+export const getAllComponents = async (req, res) => {
+  try {
+    const components = await Component.find()
+      .populate("owner", "name email")
+      .sort({ createdAt: -1 });
+
+    res.json(components);
+
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
