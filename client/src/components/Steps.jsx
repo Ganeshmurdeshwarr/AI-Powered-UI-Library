@@ -108,6 +108,7 @@ const Steps = ({setShowAuth}) => {
                     <HiSparkles size={15} /> Generate AI Component
                   </motion.button>
                   <motion.button
+                    onClick={() => navigate("/my-components")}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     className="flex items-center justify-center gap-2  px-7 py-3.5 border border-white/15 rounded-xl text-sm text-white/60 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent "
@@ -132,14 +133,14 @@ const Steps = ({setShowAuth}) => {
                   >
                     <HiSparkles size={15} /> Get Started Free
                   </motion.button>
-                  <motion.button
+                  { userData && <motion.button
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     className="flex items-center justify-center gap-2  px-7 py-3.5 border border-white/15 rounded-xl text-sm text-white/60 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent "
                   >
                     <TbComponents size={16} className="text-[#3be8ff]/70" />
                     Component
-                  </motion.button>
+                  </motion.button>}
                 </div>
               </>
             )}

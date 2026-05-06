@@ -97,6 +97,9 @@ const Hero = ({ setShowAuth }) => {
         className="flex-col flex sm:flex-row justify-center gap-3 px-4 sm:px-0"
       >
         <motion.button
+          onClick={() => {
+            `${userData ? navigate("/component") : setShowAuth(true)}`;
+          }}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.97 }}
           className="flex items-center justify-center gap-2 font-semibold text-sm px-6 sm:px-7 py-3.5 bg-white text-[#030b0d] rounded-xl cursor-pointer border-none shadow-[0_4px_24px_rgba(255,255,255,0.1)] hover:shadow-[0_6px_32px_rgba(255,255,255,0.18)] transition-shadow w-full sm:w-auto "
@@ -166,8 +169,12 @@ const Hero = ({ setShowAuth }) => {
             <span className="text-[#3be8ff]/30">Card</span>
             <span className="text-white/30">{">"}</span>
           </p>
-          <p><span className="text-white/30">{"  );"}</span></p>
-          <p><span className="text-white/50">{"}"}</span></p>
+          <p>
+            <span className="text-white/30">{"  );"}</span>
+          </p>
+          <p>
+            <span className="text-white/50">{"}"}</span>
+          </p>
         </div>
       </motion.div>
     </section>

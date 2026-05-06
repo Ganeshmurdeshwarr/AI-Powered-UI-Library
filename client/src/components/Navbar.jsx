@@ -36,7 +36,7 @@ const Navbar = ({
 
       <div className="hidden md:flex items-center gap-6 lg:gap-8 text-sm text-white/50">
         <button
-          onClick={() =>navigate("/component")}
+          onClick={() =>{`${userData ? navigate("/component") : setShowAuth(true)}`}}
           className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full "
         >
           Components
@@ -77,7 +77,7 @@ const Navbar = ({
                   </div>
                   <div className="py-1.5">
                     <button
-                      onClick={() => setProfileOpen(false)}
+                      onClick={() => {(setProfileOpen(false), navigate("/my-components"));}}
                       className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/60 hover:text-white hover:bg-white/4 transition-colors cursor-pointer bg-transparent border-none text-left"
                     >
                       <TbComponents size={16} className="text-[#3be8ff]/70" />{" "}

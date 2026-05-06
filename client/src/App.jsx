@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Generate from "./pages/Generate";
 import AdminDashboard from "./pages/AdminDashboard";
 import ComponentsPage from "./pages/ComponentPage";
+import MyComponentsPage from "./pages/MyComponentPage";
 
 export const serverUrl = "http://localhost:8000";
 
@@ -75,6 +76,7 @@ function App() {
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/generate" element={<Generate />} />
         <Route path="/component" element={<ComponentsPage />} />
+        <Route path="/my-components" element={<MyComponentsPage />} />
       </Routes>
     </>
   );

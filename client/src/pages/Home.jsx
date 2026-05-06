@@ -84,8 +84,11 @@ function Home() {
             className="md:hidden sticky top-[65px] z-30 bg-[#030b0d]/95 backdrop:-blur-md border-b border-white/5 px-4 py-4 flex flex-col gap-3"
           >
             <button
-            onClick={()=>navigate("/component")}
-            className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full">
+              onClick={() => {
+                `${userData ? navigate("/component") : setShowAuth(true)}`;
+              }}
+              className="duration-200 px-6 py-2.5 border border-white/15 rounded-xl text-sm text-white/70 hover:text-white hover:border-white/25 transition-all cursor-pointer bg-transparent w-full"
+            >
               Components
             </button>
 
@@ -101,7 +104,10 @@ function Home() {
                 </div>
 
                 <button
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    navigate("/my-components");
+                  }}
                   className="flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors py-1 bg-transparent border-none cursor-pointer text-left "
                 >
                   <TbComponents size={15} className="text-[#3be8ff]/70" />{" "}
