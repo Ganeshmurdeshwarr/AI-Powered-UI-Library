@@ -381,7 +381,7 @@ function SidebarContent({
 }
 
 // ── MAIN PAGE ──
-export default function ComponentsPage() {
+ function AllComponentsPage() {
   const { allComponents } = useSelector((s) => s.user);
   const navigate = useNavigate();
 
@@ -541,3 +541,5 @@ export default function ComponentsPage() {
     </div>
   );
 }
+
+export default AllComponentsPage

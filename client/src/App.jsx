@@ -6,8 +6,9 @@ import { setAllUsers, setUserData, setAllComponents } from "./redux/userSlice";
 import Home from "./pages/Home";
 import Generate from "./pages/Generate";
 import AdminDashboard from "./pages/AdminDashboard";
-import ComponentsPage from "./pages/ComponentPage";
+import ComponentsPage from "./pages/AllComponentPage";
 import MyComponentsPage from "./pages/MyComponentPage";
+import Pricing from "./pages/Pricing";
 
 export const serverUrl = "http://localhost:8000";
 
@@ -29,12 +30,12 @@ function App() {
           { withCredentials: true },
         );
         dispatch(setUserData(res.data));
+        setAuthChecked(true);
       } catch (error) {
         console.log(error);
         dispatch(setUserData(null));
-      } finally{
         setAuthChecked(true)
-      }
+      } 
     };
 
     fetchUser();
@@ -69,12 +70,13 @@ function App() {
   return (
     <>
       {!authChecked && (
-        <div className="fixed top-0 left-0 w-full h-1 bg-purple-500 animate-pulse z-50" />
+        <div className="fixed top-0 left-0 w-full h-1 bg-blue-400 animate-pulse z-50" />
       )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/generate" element={<Generate />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/component" element={<ComponentsPage />} />
         <Route path="/my-components" element={<MyComponentsPage />} />
       </Routes>

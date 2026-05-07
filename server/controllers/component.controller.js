@@ -161,8 +161,10 @@ export const getAllComponents = async (req, res) => {
     const components = await Component.find()
       .populate("owner", "name email")
       .sort({ createdAt: -1 });
-
-    res.json(components);
+if(!components){
+  return res.status(404).json({message:"Components are nt found"})
+}
+   return res.status(200).json(components);
 
   } catch (err) {
     res.status(500).json({ message: err.message });
