@@ -245,7 +245,7 @@ const AdminMainContent = ({ setSidebarOpen, activeView }) => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
           >
-            <AddComponentForm onSaved={() => {}} />
+            <AddComponentForm  />
           </motion.div>
         )}
       </AnimatePresence>

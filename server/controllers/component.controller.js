@@ -137,6 +137,14 @@ execSync("npm version patch --no-git-tag-version",{
 
 console.log("Publishing to npm...");
 
+execSync(
+  `npm config set //registry.npmjs.org/:_authToken ${process.env.NPM_TOKEN}`,
+  {
+    cwd: libPath,
+    stdio: "inherit",
+  },
+);
+
 execSync("npm publish --access public",{
   cwd:libPath,
   stdio:"inherit"

@@ -94,7 +94,6 @@ function AddComponentForm({ onSaved }) {
             code={code}
             showToast={showToast}
             setSavedId={setSavedId}
-            onSaved={onSaved}
             savedId={savedId}
             setIsPublished={setIsPublished}
             isPublished={isPublished}

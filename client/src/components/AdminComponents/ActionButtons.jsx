@@ -30,7 +30,7 @@ const ActionButtons = ({
         { name: name.trim(), code, props },
         { withCredentials: true },
       );
-      setSavedId(res.data._id);
+      setSavedId(res.data.component._id);
       showToast("Component saved successfully!", "success");
       onSaved && onSaved();
     } catch (err) {

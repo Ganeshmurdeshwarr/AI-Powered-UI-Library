@@ -1,6 +1,9 @@
 export {Button} from "./components/Button/Button.jsx"
 export {Card} from "./components/Card/Card.jsx"
 
-export { ProductCard } from "./components/ProductCard/ProductCard.jsx";
 
-export { SuccessButton } from "./components/SuccessButton/SuccessButton.jsx";
+
+
+export { ExitButton } from "./components/ExitButton/ExitButton.jsx";
+
+export { NameCard } from "./components/NameCard/NameCard.jsx";
