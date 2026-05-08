@@ -486,7 +486,6 @@ const handleGenerateNew = ()=>{
               </div>
 
               <div className="flex items-center gap-3 px-3 pb-5 pt-1 flex-wrap">
-
                 {/* ----------- ADMIN BUTTONS ------------- */}
                 {userRole === "admin" && (
                   <>
@@ -532,7 +531,7 @@ const handleGenerateNew = ()=>{
 
                     {savedComponentId && !published && (
                       <motion.button
-                      onClick={handlePublished}
+                        onClick={handlePublished}
                         whileTap={{ scale: 0.97 }}
                         disabled={publishing}
                         className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all disabled::opacity-40"
@@ -564,7 +563,7 @@ const handleGenerateNew = ()=>{
                       </motion.button>
                     )}
 
-                    { published &&
+                    {published && (
                       <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -577,7 +576,7 @@ const handleGenerateNew = ()=>{
                       >
                         <FiCheckCircle size={14} /> Published
                       </motion.div>
-                    }
+                    )}
 
                     {savedComponentId && (
                       <motion.div
@@ -693,6 +692,7 @@ const handleGenerateNew = ()=>{
                         </motion.button>
 
                         <motion.button
+                          onClick={() => navigate("/my-components")}
                           whileTap={{ scale: 0.97 }}
                           className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all"
                           style={{

@@ -1,5 +1,5 @@
 import { HiSparkles } from "react-icons/hi2";
-import { TbBox, TbBrandNpm, TbCode, TbEye, TbX } from "react-icons/tb";
+import { TbBox, TbCode, TbEye, TbX } from "react-icons/tb";
 import { LiveComponentPreview } from "../LiveComponentPreview";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
