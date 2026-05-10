@@ -87,7 +87,7 @@ const Pricing = () => {
        const rzp = new window.Razorpay(options);
        rzp.open();
 
-       setLoadingPlan(null);
+     
      } catch (error) {
        console.log(error);
      }
