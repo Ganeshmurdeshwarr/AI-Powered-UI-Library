@@ -10,7 +10,7 @@ import ComponentsPage from "./pages/AllComponentPage";
 import MyComponentsPage from "./pages/MyComponentPage";
 import Pricing from "./pages/Pricing";
 
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://ai-powered-ui-library.onrender.com";
 
 
 
