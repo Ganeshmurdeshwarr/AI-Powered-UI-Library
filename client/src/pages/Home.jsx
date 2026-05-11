@@ -8,7 +8,7 @@ import Hero from "../components/Hero";
 import Steps from "../components/Steps";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { serverUrl } from "../App";
+import { serverUrl } from "../config/config";
 import axios from "axios";
 import { setUserData } from "../redux/userSlice";
 import { useNavigate } from "react-router-dom";

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "motion/react";
 import { FiZap, FiCheck, FiLock, FiArrowLeft } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { serverUrl } from "../App";
+import { serverUrl } from "../config/config";
 import axios from "axios";
 import { setUserData } from "../redux/userSlice";
 import { useDispatch } from "react-redux";

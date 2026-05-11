@@ -11,7 +11,9 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-  origin:"https://ai-powered-ui-library-main.onrender.com",
+  origin:   [ "http://localhost:5173",
+   "https://ai-powered-ui-library-main.onrender.com"
+  ],
   credentials:true,
 }))
 

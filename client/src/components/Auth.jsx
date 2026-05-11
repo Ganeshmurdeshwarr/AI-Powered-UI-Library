@@ -7,7 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../utils/firebase.js";
 import axios from "axios"
-import { serverUrl } from "../App.jsx";
+import { serverUrl } from "../config/config.js";
 import { useDispatch } from "react-redux";
 import { setUserData } from "../redux/userSlice.js";
 

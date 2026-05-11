@@ -5,7 +5,7 @@ import { setUserData } from '../../redux/userSlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { serverUrl } from '../../App';
+import { serverUrl } from "../../config/config";
 
 const SidebarContent = ({ setSidebarOpen, setActiveView, activeView }) => {
   const dispatch = useDispatch();

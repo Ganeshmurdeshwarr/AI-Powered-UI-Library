@@ -2,18 +2,11 @@ import React from 'react'
 import { HiSparkles } from "react-icons/hi";
 import {  motion } from "motion/react";
 import {
-  TbArrowRight,
   TbBrandNpm,
   TbCode,
   TbLayout,
   TbAdjustments,
   TbPlayerPlay,
-  TbCopy,
-  TbCheck,
-  TbMenu2,
-  TbX,
-  TbLogout,
-  TbComponents,
 } from "react-icons/tb";
 
 
