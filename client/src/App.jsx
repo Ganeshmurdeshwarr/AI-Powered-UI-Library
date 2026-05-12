@@ -73,7 +73,7 @@ function App() {
       )}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin" element={ userData?.role === "admin" ? <AdminDashboard /> : <Home />}/>
         <Route path="/generate" element={<Generate />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/component" element={<ComponentsPage />} />
