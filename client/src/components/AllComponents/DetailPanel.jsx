@@ -8,8 +8,8 @@ import CodeBlock from "./CodeBlock";
 function DetailPanel({ component, onBack }) {
   const [activeTab, setActiveTab] = useState("preview");
 
-  const importCode = `import { ${component.name} } from "virtual-ui-lib";`;
-  const usageCode = `import { ${component.name} } from "virtual-ui-lib";\n\nexport default function App() {\n  return (\n    <div>\n      <${component.name}${
+  const importCode = `import { ${component.name} } from "ganesh-ui-library";`;
+  const usageCode = `import { ${component.name} } from "ganesh-ui-library";\n\nexport default function App() {\n  return (\n    <div>\n      <${component.name}${
     component.props?.length
       ? `\n        ${component.props.map((p) => `${p}={/* value */}`).join("\n        ")}`
       : ""
@@ -145,7 +145,7 @@ function DetailPanel({ component, onBack }) {
                 <p className="text-xs font-semibold text-white/50 mb-3 flex items-center gap-2">
                   <TbBrandNpm size={13} /> Install
                 </p>
-                <CodeBlock code={`npm install virtual-ui-lib`} lang="bash" />
+                <CodeBlock code={`npm install ganesh-ui-library`} lang="bash" />
               </div>
 
               <div>

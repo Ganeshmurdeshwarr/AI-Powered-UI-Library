@@ -49,7 +49,7 @@ function GuidePanel() {
               <span className="text-[#3be8ff]/60 font-bold">01</span> Install
               the package
             </p>
-            <CodeBlock code={`npm install virtual-ui-lib`} lang="bash" />
+            <CodeBlock code={`npm install ganesh-ui-library`} lang="bash" />
           </div>
 
           <div>
@@ -58,7 +58,7 @@ function GuidePanel() {
               your component
             </p>
             <CodeBlock
-              code={`import { ComponentName } from "virtual-ui-lib";`}
+              code={`import { ComponentName } from "ganesh-ui-library";`}
               lang="jsx"
             />
           </div>
@@ -69,7 +69,7 @@ function GuidePanel() {
               your App.jsx
             </p>
             <CodeBlock
-              code={`import { UserAvatar, PricingCard } from "virtual-ui-lib";\n\nexport default function App() {\n  return (\n    <div>\n      <UserAvatar src="/user.png" />\n      <PricingCard title="Pro" price={99} />\n    </div>\n  );\n}`}
+              code={`import { UserAvatar, PricingCard } from "ganesh-ui-library";\n\nexport default function App() {\n  return (\n    <div>\n      <UserAvatar src="/user.png" />\n      <PricingCard title="Pro" price={99} />\n    </div>\n  );\n}`}
               lang="jsx"
             />
           </div>

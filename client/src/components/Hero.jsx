@@ -62,7 +62,7 @@ const Hero = ({ setShowAuth }) => {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-white/50 text-base sm:text-lg max-w-xl mx-auto leading-relaxed mb:8 sm:mb-10 font-light px-2"
       >
-        Use prebuild VirtualUI components or generate custom ones with AI. Copy
+        Use prebuild React UI components or generate custom ones with AI.  Copy
         clean JSX directly into your project in seconds
       </motion.p>
 

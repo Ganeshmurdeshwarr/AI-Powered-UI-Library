@@ -59,7 +59,7 @@ const Steps = ({setShowAuth}) => {
                 </span>
               </div>
               <h3 className="font-semibold text-white/90 mb-2 text-[13px] sm:text-[14px]">
-                {item.text}
+                {item.title}
               </h3>
               <p className="text-[11px] sm:text-xs text-white/40">
                 {item.text}
@@ -121,7 +121,7 @@ const Steps = ({setShowAuth}) => {
             ) : (
               <>
                 <p className="text-white/40 mb-7 sm:mb-8 text-sm max-w-md mx-auto leading-relaxed">
-                  Sign in with Google, get 150 free AI Credits, and start
+                  Sign in with Google, get 300 free AI Credits, and start
                   generating production-ready UI components instantly
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-3">

@@ -11,11 +11,11 @@ import {
 
 
 const features =[
-  {icon:TbLayout , title:"Prebuild UI Components" , text:"Install VirtualUI and use ready-made, production-garde components instantly."},
+  {icon:TbLayout , title:"Prebuild UI Components" , text:"Install ReactUI and use ready-made, production-grade components instantly."},
   {icon:HiSparkles , title:"AI Component Generator" , text:"Describe your UI in plain English and generate React component in seconds."},
   {icon:TbAdjustments , title:"Customizable Props" , text:"Modify components props and preview change in real-time rebuilding."},
   {icon:TbCode , title:"Clean JSX Code" , text:"Copy production-ready JSX directly into your project - zero boilerplate."},
-  {icon:TbBrandNpm , title:"NPM Library" , text:"Import Virtual UI components with simple nmp install command."},
+  {icon:TbBrandNpm , title:"NPM Library" , text:"Import React UI components with simple npm install command."},
   {icon:TbPlayerPlay , title:"Live Preview" , text:"Instantly preview AI-Generated components before exporting your code."}
 ]
 

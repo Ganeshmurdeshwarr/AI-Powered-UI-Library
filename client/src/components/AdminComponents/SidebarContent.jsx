@@ -43,7 +43,7 @@ const SidebarContent = ({ setSidebarOpen, setActiveView, activeView }) => {
           <SiValorant size={15} color="#051c20" />
         </div>
         <div>
-          <span className="text-base font-bold block">VirtualAI</span>
+          <span className="text-base font-bold block">ReactAI</span>
           <span className="text-[10px] text-[#3be8ff]/60 font-semibold tracking-[2px] uppercase">
             Admin
           </span>

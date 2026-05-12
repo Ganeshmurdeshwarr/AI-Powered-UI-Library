@@ -19,7 +19,7 @@ const steps = [
   },
   {
     icon: HiSparkles,
-    title: "Get 150 AI credit",
+    title: "Get 300 AI Credits",
     desc: "Free credit to generate premium UI components",
   },
   {
@@ -116,7 +116,7 @@ function Auth({ onClose }) {
                 className="text-xl font-bold text-[#e8f8fa] tracking-tight"
                 style={{ fontFamily: "'Syne','sans-serif'" }}
               >
-                VirtualUI
+                ReactUI
               </span>
             </motion.div>
 
@@ -193,7 +193,7 @@ function Auth({ onClose }) {
 
               <div className="flex justify-center gap-4 sm:gap-5 mb-6 sm:mb-7">
                 {[
-                  ["150", "AI Credit"],
+                  ["300", "AI Credits"],
                   ["∞", "Components"],
                   ["JSX", "Ready"],
                 ].map(([item, l], i) => (

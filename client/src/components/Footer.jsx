@@ -13,7 +13,7 @@ const Footer = () => {
             className="text-lg font-bold tracking-tight"
             style={{ fontFamily: "'Syne','sans-serif'" }}
           >
-            VirtualUI
+            ReactUI
           </span>
         </div>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-5 text-xs text-white/30">
@@ -21,11 +21,11 @@ const Footer = () => {
             Components
           </span>
           <span className="hover:text-white/60 transition-colors">
-            admin@virtualui.com
+            admin@reactui.com
           </span>
         </div>
         <p className="text-sm text-white/25 order-last sm:order-0">
-        @ {new Date().getFullYear()} VirtualUI. All rights reserved.
+        @ {new Date().getFullYear()} ReactUI. All rights reserved.
         </p>
       </div>
     </footer>
