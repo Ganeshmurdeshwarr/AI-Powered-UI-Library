@@ -24,7 +24,7 @@ function Home() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
- console.log("User data in Home.jsx:", userData); // ← what does this print?
+
 
   // ── Admin redirect ──
   useEffect(() => {
