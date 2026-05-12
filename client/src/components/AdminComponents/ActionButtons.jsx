@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "motion/react";
 import React, { useState } from 'react'
 import { TbDeviceFloppy, TbLoader } from 'react-icons/tb';
-import { serverUrl } from "../../config/config";
 import axios from "axios";
+import { serverUrl } from "../../App";
 
 const ActionButtons = ({
   code,

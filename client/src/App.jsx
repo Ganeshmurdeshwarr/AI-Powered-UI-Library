@@ -10,7 +10,7 @@ import ComponentsPage from "./pages/AllComponentPage";
 import MyComponentsPage from "./pages/MyComponentPage";
 import Pricing from "./pages/Pricing";
 
-import { serverUrl } from "./config/config";
+export const serverUrl ="http://localhost:8000"
 
 
 function App() {

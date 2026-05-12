@@ -22,8 +22,8 @@ import { TbX } from "react-icons/tb";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUserData } from "../redux/userSlice";
-import { serverUrl } from "../config/config";
 import { LiveComponentPreview } from "../components/LiveComponentPreview";
+import { serverUrl } from "../App";
 
 const Toast = ({ message, type, onClose }) => {
   return (

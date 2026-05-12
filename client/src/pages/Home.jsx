@@ -8,11 +8,11 @@ import Hero from "../components/Hero";
 import Steps from "../components/Steps";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { serverUrl } from "../config/config";
 import axios from "axios";
 import { setUserData } from "../redux/userSlice";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { serverUrl } from "../App";
 
 
 
@@ -23,6 +23,8 @@ function Home() {
   const [profileOpen, setProfileOpen] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+ console.log("User data in Home.jsx:", userData); // ← what does this print?
 
   // ── Admin redirect ──
   useEffect(() => {

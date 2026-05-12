@@ -9,3 +9,5 @@ export { GoogleButton } from "./components/GoogleButton/GoogleButton.jsx";
 
 
 export { Loading } from "./components/Loading/Loading.jsx";
+
+export { ProfileCard } from "./components/ProfileCard/ProfileCard.jsx";
