@@ -5,10 +5,8 @@ Built with the MERN stack, this platform combines reusable UI components, AI-pow
 🚀 Live Demo
 
 Frontend: https://ai-powered-ui-library-main.onrender.com
-
-Backend API: Backend API
-GitHub Repository: GitHub Repo
-NPM Package: ganesh-ui-library
+GitHub Repository: https://github.com/Ganeshmurdeshwarr/AI-Powered-UI-Library
+NPM Package: https://www.npmjs.com/package/ganesh-ui-library?utm_source=chatgpt.com
 
 ✨ Features
 
@@ -44,20 +42,18 @@ Powered by OpenRouter AI APIs.
 📦 Installation
 Install the component library:
 npm install ganesh-ui-library
+
 Import components:
-import { Button } from "ganesh-ui-library";
-Example:
 
 import { Button, Card } from "ganesh-ui-library";
-
 export default function App() {
-return (   
-    <div>   
-    <Card>    
-    <Button>Click Me</Button>
-    </Card>   
-  </div>  
-);
+  return (
+    <div>
+      <Card>
+        <Button>Click Me</Button>
+      </Card>
+    </div>
+  );
 }
 
 🖥️ Tech Stack
