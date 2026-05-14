@@ -4,9 +4,9 @@ Built with the MERN stack, this platform combines reusable UI components, AI-pow
 
 🚀 Live Demo
 
-Frontend: https://ai-powered-ui-library-main.onrender.com
-GitHub Repository: https://github.com/Ganeshmurdeshwarr/AI-Powered-UI-Library
-NPM Package: https://www.npmjs.com/package/ganesh-ui-library?utm_source=chatgpt.com
+--Frontend: https://ai-powered-ui-library-main.onrender.com
+--GitHub Repository: https://github.com/Ganeshmurdeshwarr/AI-Powered-UI-Library
+--NPM Package: https://www.npmjs.com/package/ganesh-ui-library?utm_source=chatgpt.com
 
 ✨ Features
 
